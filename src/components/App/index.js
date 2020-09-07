@@ -1,5 +1,5 @@
 import * as React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import PropTypes from "prop-types";
 import Home from "../Home";
 import Players from "../Players";
@@ -12,17 +12,23 @@ export default function App() {
       <div>
         <NavBar />
 
-        <Route exact path="/">
-          <Home />
-        </Route>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
 
-        <Route path="">
-          <Players />
-        </Route>
+          <Route path="/players">
+            <Players />
+          </Route>
 
-        <Route path="/teams">
-          <Teams />
-        </Route>
+          <Route path="/teams">
+            <Teams />
+          </Route>
+
+          <Route path="*">
+            <h1 className="text-center">Four oh Four</h1>
+          </Route>
+        </Switch>
       </div>
     </Router>
   );
