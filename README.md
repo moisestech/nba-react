@@ -19,6 +19,11 @@ Basketball League React Application
 │   │   ├── NavBar
 │   │   │   └── index.js
 │   │   ├── Players
+│   │   │   ├── components
+│   │   │   │   └── Player
+│   │   │   │       └── index.js
+│   │   │   └── index.js
+│   │   ├── Sidebar
 │   │   │   └── index.js
 │   │   ├── TeamLogo
 │   │   │   └── index.js
