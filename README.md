@@ -1,16 +1,29 @@
 # nba-react
+
 Basketball League React Application
 
 ##Application Tree
+
 ```bash
 ├── README.md
+├── package.json
 ├── public
 │   ├── _redirects
 │   └── index.html
 ├── src
 │   ├── components
-│   │   ├── App.js
-│   │   └── TeamLogo.js
+│   │   ├── App
+│   │   │   └── index.js
+│   │   ├── Home
+│   │   │   └── index.js
+│   │   ├── NavBar
+│   │   │   └── index.js
+│   │   ├── Players
+│   │   │   └── index.js
+│   │   ├── TeamLogo
+│   │   │   └── index.js
+│   │   └── Teams
+│   │       └── index.js
 │   ├── hooks
 │   │   ├── useArticle.js
 │   │   ├── useFetch.js
@@ -23,12 +36,13 @@ Basketball League React Application
 └── webpack.config.js
 ```
 
-##Roadmap
+## Roadmap
 
 NBA API Suport
 [nba.com/teams](https://www.nba.com/teams)
 [nba.com/player](https://www.nba.com/players)
 [nba.com/player/:name](https://www.nba.com/players/)
 
-##Project Preview
+## Project Preview
+
 (Coming Soon!)
