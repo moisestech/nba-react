@@ -1,5 +1,5 @@
-import useFetch from './useFetch'
+import useFetch from "./useFetch";
 
-export default function usePlayers (team) {
-  return useFetch('/players', 'POST', JSON.stringify({ team }))
+export default function usePlayers(team) {
+  return useFetch("/players", "POST", JSON.stringify({ team }));
 }
