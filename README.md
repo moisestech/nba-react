@@ -2,7 +2,7 @@
 
 Basketball League React Application
 
-##Application Tree
+# Application Tree
 
 ```bash
 ├── README.md
@@ -14,7 +14,11 @@ Basketball League React Application
 │   ├── components
 │   │   ├── App
 │   │   │   └── index.js
+│   │   ├── Articles
+│   │   │   └── index.js
 │   │   ├── Home
+│   │   │   └── index.js
+│   │   ├── Loading
 │   │   │   └── index.js
 │   │   ├── NavBar
 │   │   │   └── index.js
@@ -27,18 +31,41 @@ Basketball League React Application
 │   │   │   └── index.js
 │   │   ├── TeamLogo
 │   │   │   └── index.js
+│   │   ├── TeamPage
+│   │   │   ├── components
+│   │   │   │   ├── ArticleList
+│   │   │   │   │   └── index.js
+│   │   │   │   ├── Championships
+│   │   │   │   │   └── index.js
+│   │   │   │   └── Stats
+│   │   │   │       └── index.js
+│   │   │   └── index.js
 │   │   └── Teams
+│   │       ├── components
+│   │       │   └── Team
+│   │       │       └── index.js
 │   │       └── index.js
 │   ├── hooks
 │   │   ├── useArticle.js
 │   │   ├── useFetch.js
 │   │   ├── usePlayers.js
 │   │   ├── useTeam.js
-│   │   ├── useTeamArticles.js
-│   │   └── useTeamNames.js
+│   │   ├── useTeamNames.js
+│   │   └── useTeamsArticles.js
 │   ├── index.css
 │   └── index.js
 └── webpack.config.js
+```
+
+## URL Tree
+
+```bash
+├──  Home
+├── /players #Players
+├── /players/:playerId #Player
+├── /team/ #Teams
+├── /team/:teamId #Team
+└── /* #404
 ```
 
 ## Roadmap
@@ -51,3 +78,7 @@ NBA API Suport
 ## Project Preview
 
 (Coming Soon!)
+
+![]()
+![]()
+![]()
