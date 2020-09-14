@@ -1,28 +1,22 @@
 import React from "react";
-import PropTypes from "prop-types";
-import {
-  useLocation,
-  Switch,
-  Route,
-  useRouteMatch,
-  useParams,
-  Link,
-} from "react-router-dom";
+import { useLocation, Switch, Route, useRouteMatch } from "react-router-dom";
 import { parse } from "query-string";
 import usePlayers from "../../hooks/usePlayers";
+
 import Sidebar from "../Sidebar";
 import Player from "../Players/components/Player/";
+import Loading from "../Loading";
 
 export default function Players() {
   const location = useLocation();
-  const { url } = useRouteMatch();
+  const { path } = useRouteMatch();
 
   const team = location.search ? parse(location.search).teamId : null;
 
   const { response: players, loading } = usePlayers(team);
 
   if (loading === true) {
-    return <p>LOADING</p>;
+    return <Loading />;
   }
 
   return (
@@ -30,7 +24,7 @@ export default function Players() {
       <Sidebar title="Players" list={players.map((player) => player.name)} />
 
       <Switch>
-        <Route path={`${url}/:playerId`}>
+        <Route path={`${path}/:playerId`}>
           <Player players={players} />
         </Route>
 
@@ -41,5 +35,3 @@ export default function Players() {
     </div>
   );
 }
-
-Players.propTypes = {};
