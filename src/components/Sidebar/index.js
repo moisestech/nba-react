@@ -1,4 +1,5 @@
 import * as React from "react";
+import PropTypes from "prop-types";
 import { Link, useRouteMatch, useLocation } from "react-router-dom";
 import slug from "slug";
 
@@ -13,7 +14,7 @@ function CustomLink({ to, children }) {
 }
 
 CustomLink.propTypes = {
-  to: PropTypes.string.isRequired,
+  to: PropTypes.object.isRequired,
   children: PropTypes.string.isRequired,
 };
 
@@ -42,6 +43,6 @@ export default function Sidebar({ title, list }) {
 }
 
 Sidebar.propTypes = {
-  list: PropTypes.array.isRequire,
+  list: PropTypes.array.isRequired,
   title: PropTypes.string.isRequired,
 };
