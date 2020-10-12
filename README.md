@@ -4,9 +4,16 @@ Basketball League React Application
 
 ## Project Preview
 
+[Home](https://raw.githubusercontent.com/moisestech/nba-react/master/public/assets/nba_react_router_1.png)
 ![](https://user-images.githubusercontent.com/2933430/82761753-f994a380-9db9-11ea-98af-922c37266d46.png)
+
+[Players](https://raw.githubusercontent.com/moisestech/nba-react/master/public/assets/nba_react_router_2.png)
 ![](https://user-images.githubusercontent.com/2933430/82761748-f7cae000-9db9-11ea-9cce-8e6ab5dcc2c7.png)
+
+[Teams](https://raw.githubusercontent.com/moisestech/nba-react/master/public/assets/nba_react_router_3.png)
 ![](https://user-images.githubusercontent.com/2933430/82761747-f699b300-9db9-11ea-9e59-a79c65fd6536.png)
+
+[Articles](https://raw.githubusercontent.com/moisestech/nba-react/master/public/assets/nba_react_router_4.png)
 ![](https://user-images.githubusercontent.com/2933430/82761744-f39ec280-9db9-11ea-954d-33feb6bfc706.png)
 
 ## Application Tree
@@ -68,11 +75,13 @@ Basketball League React Application
 
 ```bash
 ├──  Home
-├── /players #Players
-├── /players/:playerId #Player
-├── /team/ #Teams
-├── /team/:teamId #Team
-└── /* #404
+├── /players            #Players
+├── /players/:playerId  #Player:ID
+├── /teams/             #Teams
+├── /team/:teamId       #Team:ID
+├── /articles/          #Articles
+├── /articles/          #Article:ID
+└── /*                  #404
 ```
 
 ## Roadmap
