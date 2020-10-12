@@ -2,7 +2,7 @@
 
 # NBA React
 
-<img src="[nba-react-logo.png](https://raw.githubusercontent.com/moisestech/nba-react/master/public/assets/nba-react-logo.png)" width="150px" />
+<img src="https://raw.githubusercontent.com/moisestech/nba-react/master/public/assets/nba-react-logo.png" width="150px" />
 
 Basketball League React Application, displaying Teams, Players, and Game Articles with unique URL Routing Ids.
 
