@@ -1,8 +1,12 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/47004bd3-e920-4e18-a795-e4f79f4e0fd0/deploy-status)](https://app.netlify.com/sites/nba-react/deploys)
+
 # NBA React
 
-Basketball League React Application
+<img src="nba-react-logo.png" width="150px" />
 
-## Project Preview
+Basketball League React Application, displaying Teams, Players, and Game Articles with unique URL Routing Ids.
+
+## 👁️‍🗨️ Project Preview
 
 [Home](https://raw.githubusercontent.com/moisestech/nba-react/master/public/assets/nba_react_router_1.png)
 ![](https://user-images.githubusercontent.com/2933430/82761753-f994a380-9db9-11ea-98af-922c37266d46.png)
@@ -16,7 +20,20 @@ Basketball League React Application
 [Articles](https://raw.githubusercontent.com/moisestech/nba-react/master/public/assets/nba_react_router_4.png)
 ![](https://user-images.githubusercontent.com/2933430/82761744-f39ec280-9db9-11ea-954d-33feb6bfc706.png)
 
-## Application Tree
+## 🗺 URL Tree
+
+```bash
+├── /                   #Home
+├── /players            #Players
+├── /players/:playerId  #Player:ID
+├── /teams/             #Teams
+├── /team/:teamId       #Team:ID
+├── /articles/          #Articles
+├── /articles/          #Article:ID
+└── /*                  #404
+```
+
+## 🌿 Application Tree
 
 ```bash
 ├── README.md
@@ -71,27 +88,14 @@ Basketball League React Application
 └── webpack.config.js
 ```
 
-## URL Tree
-
-```bash
-├──  Home
-├── /players            #Players
-├── /players/:playerId  #Player:ID
-├── /teams/             #Teams
-├── /team/:teamId       #Team:ID
-├── /articles/          #Articles
-├── /articles/          #Article:ID
-└── /*                  #404
-```
-
-## Roadmap
+## ⛰️ Roadmap
 
 NBA API Suport
 [nba.com/teams](https://www.nba.com/teams)  
 [nba.com/player](https://www.nba.com/players)  
 [nba.com/player/:name](https://www.nba.com/players/)
 
-## Todos
+## 📝 Todos
 
 - Dark / Light Theme
 - Fix Route Params
