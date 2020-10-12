@@ -1,6 +1,14 @@
-# nba-react
+# NBA React
 
 Basketball League React Application
+
+## Project Preview
+
+(Coming Soon!)
+
+![]()
+![]()
+![]()
 
 # Application Tree
 
@@ -71,14 +79,14 @@ Basketball League React Application
 ## Roadmap
 
 NBA API Suport
-[nba.com/teams](https://www.nba.com/teams)
-[nba.com/player](https://www.nba.com/players)
+[nba.com/teams](https://www.nba.com/teams)  
+[nba.com/player](https://www.nba.com/players)  
 [nba.com/player/:name](https://www.nba.com/players/)
 
-## Project Preview
+## Todos
 
-(Coming Soon!)
-
-![]()
-![]()
-![]()
+- Dark / Light Theme
+- Fix Route Params
+- Favicon
+- Upgrade to React 17
+- Add Routing Animation
