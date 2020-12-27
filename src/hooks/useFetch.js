@@ -1,12 +1,12 @@
-import * as React from "react";
+import { useEffect, useState } from "react";
 
 const API = "https://api.ui.dev/hash-history-basketball-league";
 
 export default function useFetch(path, method, body = "") {
-  const [response, setResponse] = React.useState(null);
-  const [loading, setLoading] = React.useState(true);
+  const [response, setResponse] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const abortController = new AbortController();
     const signal = abortController.signal;
 
